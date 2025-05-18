@@ -52,3 +52,26 @@ export default tseslint.config({
   },
 })
 ```
+
+## Add tailwind
+**install tailwind package**
+```bash
+npm install tailwindcss @tailwindcss/vite
+```
+**change vite.config.js**
+```ts
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
+export default defineConfig({
+  plugins: [
+    tailwindcss(),
+  ],
+})
+```
+
+**import tailwind in css**
+```css
+@import "tailwindcss";
+```
+
+
