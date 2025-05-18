@@ -6,7 +6,7 @@ export const productsApi = createApi({
   endpoints: (builder) => ({
     // Define a query to fetch all products
     getAllProducts: builder.query({
-      query: () => 'products',
+      query: () => 'products/?delay=3000',
     }),
   }),
 });
